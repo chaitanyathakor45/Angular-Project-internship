@@ -31,8 +31,24 @@
                 "input": "public"
               }
             ],
-            "styles": ["src/styles.scss"],
-            "scripts": []
+            "styles": [
+              "src/theme/assets/vendor/fonts/iconify-icons.css",
+              "src/theme/assets/vendor/css/core.css",
+              "src/theme/assets/css/demo.css",
+              "src/theme/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css",
+              "src/theme/assets/vendor/css/pages/page-auth.css",
+              "src/styles.scss"
+            ],
+            "scripts": [
+              "src/theme/assets/vendor/js/helpers.js",
+              "src/theme/assets/js/config.js",
+              "src/theme/assets/vendor/libs/jquery/jquery.js",
+              "src/theme/assets/vendor/libs/popper/popper.js",
+              "src/theme/assets/vendor/js/bootstrap.js",
+              "src/theme/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js",
+              "src/theme/assets/vendor/js/menu.js",
+              "src/theme/assets/js/main.js"
+            ]
           },
           "configurations": {
             "production": {
