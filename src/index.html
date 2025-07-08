@@ -45,5 +45,24 @@
 
     <!-- Place this tag before closing body tag for github widget button. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.menu-toggle').forEach((toggle) => {
+          toggle.addEventListener('click', function () {
+            const clickedItem = this.closest('.menu-item');
+
+            // Close all other open menu-items
+            document.querySelectorAll('.menu-item.open').forEach((item) => {
+              if (item !== clickedItem) {
+                item.classList.remove('open');
+              }
+            });
+
+            // Toggle open on the clicked one
+            clickedItem.classList.toggle('open');
+          });
+        });
+      });
+    </script>
   </body>
 </html>
