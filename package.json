@@ -32,8 +32,6 @@
     "@ngneat/until-destroy": "^10.0.0",
     "@ngx-translate/core": "^15.0.0",
     "@ngxpert/hot-toast": "^4.0.0",
-    "ag-grid-angular": "^34.0.1",
-    "ag-grid-community": "^34.0.1",
     "bootstrap": "^5.3.3",
     "rxjs": "~7.8.0",
     "sanitize.css": "^13.0.0",

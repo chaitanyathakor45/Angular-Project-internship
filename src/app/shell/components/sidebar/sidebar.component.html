@@ -20,14 +20,14 @@
 
   <ul class="menu-inner py-1" style="max-height: calc(88vh); min-height: calc(80vh); overflow-x: hidden; overflow-y: scroll">
     <li class="menu-item">
-      <a href="/dashboard" class="menu-link active">
+      <a [routerLink]="['/dashboard']" routerLinkActive="active" class="menu-link">
         <i class="menu-icon tf-icons bx bx-home-alt"></i>
         <div class="text-truncate">Dashboard</div>
       </a>
     </li>
 
     <li class="menu-item">
-      <a href="/leads/list" class="menu-link">
+      <a [routerLink]="['/leads']" routerLinkActive="active" class="menu-link">
         <i class="menu-icon tf-icons bx bx-user-pin"></i>
         <div class="text-truncate" data-i18n="Basic">Leads</div>
       </a>

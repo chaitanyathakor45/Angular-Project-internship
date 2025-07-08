@@ -1,48 +1,15 @@
-.lead-grid-container {
-  position: relative;
-  height: 600px;
-  width: 100%;
+.table {
+  th {
+    font-weight: 600;
 
-  .loading-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
+    i {
+      font-size: 0.875rem;
+      margin-left: 0.25rem;
+    }
   }
-}
 
-:host ::ng-deep {
-  .ag-theme-alpine {
-    --ag-header-background-color: #f8f9fa;
-    --ag-odd-row-background-color: #ffffff;
-    --ag-row-hover-color: #f0f7ff;
-    --ag-selected-row-background-color: #e6f2ff;
-    --ag-font-size: 14px;
-    --ag-font-family: inherit;
-
-    .ag-header-cell {
-      font-weight: 600;
-    }
-
-    .ag-row {
-      border-bottom: 1px solid #e9ecef;
-    }
-
-    .ag-row-hover {
-      background-color: var(--ag-row-hover-color) !important;
-    }
-
-    .ag-cell {
-      display: flex;
-      align-items: center;
-    }
+  tbody tr:hover {
+    background-color: #f8f9fa;
   }
 }
 
@@ -59,5 +26,57 @@
 
   .card-body {
     padding: 1.5rem;
+  }
+
+  .card-footer {
+    background-color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 1rem 1.5rem;
+  }
+}
+
+.pagination {
+  .page-link {
+    color: #696cff;
+
+    &:hover {
+      background-color: #e7e7ff;
+    }
+  }
+
+  .page-item.active .page-link {
+    background-color: #696cff;
+    border-color: #696cff;
+  }
+}
+
+.badge {
+  padding: 0.35em 0.65em;
+  font-size: 0.75em;
+  font-weight: 500;
+
+  &.bg-label-primary {
+    background-color: #e7e7ff !important;
+    color: #696cff !important;
+  }
+
+  &.bg-label-success {
+    background-color: #e8fadf !important;
+    color: #71dd37 !important;
+  }
+
+  &.bg-label-info {
+    background-color: #d7f5fc !important;
+    color: #03c3ec !important;
+  }
+
+  &.bg-label-warning {
+    background-color: #fff4d9 !important;
+    color: #ffab00 !important;
+  }
+
+  &.bg-label-danger {
+    background-color: #ffe0db !important;
+    color: #ff3e1d !important;
   }
 }
