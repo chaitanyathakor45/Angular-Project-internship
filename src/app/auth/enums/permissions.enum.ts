@@ -23,6 +23,8 @@
 export enum PERMISSIONS {
   CREATE_USER = 'create.user',
   CREATE_SALE = 'create.sale',
+  CREATE_LEAD = 'create.lead',
   ACCESS_USER = 'access.user',
   ACCESS_SALE = 'access.sale',
+  ACCESS_LEAD = 'access.lead',
 }

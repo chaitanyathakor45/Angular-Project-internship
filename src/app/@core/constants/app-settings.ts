@@ -15,40 +15,48 @@ export const appSetting = {
       create: {
         user: true,
         sale: true,
+        lead: true,
       },
       access: {
         user: true,
         sale: true,
+        lead: true,
       },
     },
     [ROLE.USER]: {
       create: {
         user: false,
         sale: false,
+        lead: true,
       },
       access: {
         user: false,
         sale: true,
+        lead: true,
       },
     },
     [ROLE.MEMBER]: {
       create: {
         user: false,
         sale: true,
+        lead: true,
       },
       access: {
         user: false,
         sale: true,
+        lead: true,
       },
     },
     [ROLE.GUEST]: {
       create: {
         user: false,
         sale: false,
+        lead: false,
       },
       access: {
         user: false,
         sale: false,
+        lead: false,
       },
     },
   },

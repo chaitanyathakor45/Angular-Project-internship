@@ -14,6 +14,13 @@ export const webSidebarMenuItems: NavMenuItem[] = [
     icon: 'fa-home',
   },
   {
+    href: '/leads',
+    title: 'Leads',
+    active: false,
+    icon: 'fa-funnel-dollar',
+    permissions: [PERMISSIONS.ACCESS_LEAD],
+  },
+  {
     href: '/users',
     title: 'Users',
     active: false,
