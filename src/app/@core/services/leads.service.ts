@@ -1,21 +1,22 @@
-import { Injectable } from '@angular/core';
+// src/app/@core/services/leads.service.ts
+
+import { Injectable } from '@angular/core'; // <--- Make sure this import is present
 import { Observable, of } from 'rxjs';
 import { delay } from 'rxjs/operators';
-import { LeadEntity } from '../entities/lead.entity';
+import { LeadEntity } from '../entities/lead.entity'; // Verify this path also
 
 @Injectable({
-  providedIn: 'root',
+  // <--- THIS DECORATOR IS ABSOLUTELY CRUCIAL
+  providedIn: 'root', // This makes the service available throughout your app
 })
 export class LeadsService {
   private readonly mockLeads: LeadEntity[] = [];
 
   constructor() {
-    // Generate 35 mock leads
     this.generateMockLeads();
   }
 
   getAllLeads(): Observable<LeadEntity[]> {
-    // Simulate API call with delay
     return of(this.mockLeads).pipe(delay(800));
   }
 
@@ -26,7 +27,7 @@ export class LeadsService {
 
     for (let i = 1; i <= 35; i++) {
       const randomDate = new Date();
-      randomDate.setDate(randomDate.getDate() - Math.floor(Math.random() * 90)); // Random date within last 90 days
+      randomDate.setDate(randomDate.getDate() - Math.floor(Math.random() * 90));
 
       this.mockLeads.push(
         new LeadEntity({

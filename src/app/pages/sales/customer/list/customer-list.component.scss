@@ -1,0 +1,85 @@
+/* src/app/pages/sales/customer/list/customer-list.component.scss */
+
+/* Reuses the general styling defined for .table, .card, .pagination, .badge */
+.table {
+  th {
+    font-weight: 600;
+
+    i {
+      font-size: 0.875rem;
+      margin-left: 0.25rem;
+    }
+  }
+
+  tbody tr:hover {
+    background-color: #f8f9fa;
+  }
+}
+
+.card {
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+
+  .card-header {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 1.25rem 1.5rem;
+  }
+
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .card-footer {
+    background-color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 1rem 1.5rem;
+  }
+}
+
+.pagination {
+  .page-link {
+    color: #696cff;
+
+    &:hover {
+      background-color: #e7e7ff;
+    }
+  }
+
+  .page-item.active .page-link {
+    background-color: #696cff;
+    border-color: #696cff;
+  }
+}
+
+.badge {
+  padding: 0.35em 0.65em;
+  font-size: 0.75em;
+  font-weight: 500;
+
+  &.bg-label-primary {
+    background-color: #e7e7ff !important;
+    color: #696cff !important;
+  }
+
+  &.bg-label-success {
+    background-color: #e8fadf !important;
+    color: #71dd37 !important;
+  }
+
+  &.bg-label-info {
+    background-color: #d7f5fc !important;
+    color: #03c3ec !important;
+  }
+
+  &.bg-label-warning {
+    background-color: #fff4d9 !important;
+    color: #ffab00 !important;
+  }
+
+  &.bg-label-danger {
+    background-color: #ffe0db !important;
+    color: #ff3e1d !important;
+  }
+}

@@ -1,6 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { UseLeads } from '@core/usecases';
+import { UseLeads } from '@core/usecases/useLeads';
 import { LeadEntity } from '@core/entities';
 import { HotToastService } from '@ngxpert/hot-toast';
 

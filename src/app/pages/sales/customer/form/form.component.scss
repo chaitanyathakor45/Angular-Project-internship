@@ -1,0 +1,46 @@
+.customer-form-card {
+  padding: 0;
+
+  .mat-card-header {
+    padding: 16px 24px 0;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    .mat-card-title {
+      font-size: 22px;
+      font-weight: 500;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 12px;
+    }
+  }
+
+  .mat-card-content {
+    padding: 24px;
+  }
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+
+  mat-form-field {
+    width: 100%;
+  }
+
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 12px 0;
+  }
+}
