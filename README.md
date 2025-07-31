@@ -37,6 +37,6 @@ My code for this project is versioned and published on GitHub for transparency a
 
 ## Contact
 **Chaitanya Thakor**
-* [cite_start]**Email:** chaitanyathakor685@gmail.com [cite: 2]
-* [cite_start]**LinkedIn Profile:** [LinkedIn Profile URL] [cite: 3]
-* [cite_start]**GitHub Profile:** [GitHub Profile URL] [cite: 3]
+*  **Email:** chaitanyathakor685@gmail.com 
+*  **LinkedIn Profile:** https://www.linkedin.com/in/chaitanya-thakor-5b6345246/
+*  **GitHub Profile:** https://github.com/chaitanyathakor45
